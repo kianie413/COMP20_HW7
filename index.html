@@ -108,6 +108,7 @@
     //     cityVisable = document.getElementById("vCity");
     //     if (document.getElementsByName("p_or_d")[0].checked == true){
     //         streetVisable.style.display = "none";
+	//		   cityVisable.style.display = "none";
     //     }
     // }
 
@@ -117,8 +118,9 @@
 
 	function confirm() {
 		if (document.getElementsByName("p_or_d")[0].checked) {
-            // i want it to hid city and street when pickup is checked
+            // hide city and street when pickup is checked
             // document.getElementsByName("city").style.display="none";
+			// document.getElementsByName("street").style.display="none";
             // toggleVisability();
 			validName = checkLname();
 			validPhone = checkPnum();
@@ -177,13 +179,12 @@
 <p>First Name: <input type="text"  name='fname' /></p>
 <p>Last Name*:  <input type="text"  name='lname' /><span id="lnIssue" style="padding-left: 1em;"></span></p>
 <!-- WIP -->
-<div id = "vStreet">
-    Street: <input type="text"  name='street' /><span id="sIssue" style="padding-left: 1em;"></span>
-</div>
-<div id = "vCity">
-    City: <input type="text"  name='city' /><span id="cIssue" style="padding-left: 1em;"></span>
-</div>
-
+<!-- <div id = "vStreet"> -->
+<p>Street: <input type="text"  name='street' /><span id="sIssue" style="padding-left: 1em;"></span></p>
+<!-- </div> -->
+<!-- <div id = "vCity"> -->
+<p>City: <input type="text"  name='city' /><span id="cIssue" style="padding-left: 1em;"></span></p>
+<!-- </div> -->
 <p>Phone*: <input type="text"  name='phone' /><span id="pIssue" style="padding-left: 1em;">Correct formation: xxx-xxx-xxxx</span></p>
 <p> 
 	<input type="radio"  name="p_or_d" value = "pickup" checked="checked"/>Pickup  
